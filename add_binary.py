@@ -1,5 +1,7 @@
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
+        cary = 0
+        num = ''
         if len(a)>len(b):
             first_num = a
             second_num = (len(a)-len(b))*'0' + b
@@ -8,8 +10,6 @@ class Solution:
             second_num = (len(b) - len(a)) * '0' + a
 
         i = len(first_num)-1
-        cary = 0
-        num = ''
         while i>-1:
             if int(first_num[i]) + int(second_num[i]) + cary == 2:
                 num = num+'0'
