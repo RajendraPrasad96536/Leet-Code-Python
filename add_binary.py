@@ -6,6 +6,7 @@ class Solution:
         else:
             first_num = b
             second_num = (len(b) - len(a)) * '0' + a
+
         i = len(first_num)-1
         cary = 0
         num = ''
