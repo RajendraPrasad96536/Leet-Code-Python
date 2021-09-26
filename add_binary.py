@@ -22,6 +22,7 @@ class Solution:
         else:
             return num
 
+
 # Defining main function
 def main():
     x = Solution()
